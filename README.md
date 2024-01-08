@@ -1,5 +1,6 @@
 # mnist_burn
 
+
 # rust in flutter:
 ## tutorials
 * https://www.zaynetro.com/post/flutter-rust-bridge-2023#global-state-and-tokio
