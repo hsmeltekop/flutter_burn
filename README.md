@@ -7,7 +7,7 @@
   
 ## create model to use with flutter:
 * inside `create_mnist_burn_model` run: `src/bin/create_model.rs`
-* get `model.mpk.gz` and 
+* get `model.mpk.gz` and copy it to `./assets`
 
 ## setup flutter
 * `dart create local`  # test api with dart locally
