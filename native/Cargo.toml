@@ -1,0 +1,28 @@
+[package]
+name = "native"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "native"
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+flutter_rust_bridge = "1.82.4"
+
+serde = "1"
+burn = { git = "https://github.com/burn-rs/burn", features = [
+
+    "train",
+    "ndarray",
+    "burn-train",
+
+    "experimental-named-tensor",
+] }
+image = "0.24.7"
+stopwatch = "0.0.7"
+static_init = "1.0.3"
+lazy_static = "1.4.0"

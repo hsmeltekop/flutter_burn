@@ -1,0 +1,30 @@
+[package]
+name = "test_burn"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+serde = "1"
+burn = { git = "https://github.com/burn-rs/burn", features = [
+    "wgpu",
+    "train",
+    "ndarray",
+    "burn-train",
+    "train-minimal",
+    "dataset",
+    "experimental-named-tensor",
+] }
+image = "0.24.7"
+anyhow = "1.0.75"
+stopwatch = "0.0.7"
+static_init = "1.0.3"
+lazy_static = "1.4.0"
+
+# burn-core = "0.10.0"
+# burn-train = "0.10.0"
+# burn-wgpu = "0.10.0"
+# burn-dataset = "0.10.0"
+# burn-autodiff = "0.10.0"
